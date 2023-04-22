@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Roboto;
+  background-color: #09090a;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+@font-face {
+  font-family: "NovemberGeLC-Bold";
+  src: url("./other/fonts/NovemberGeLC-Bold.woff2") format("truetype");
+}
+@font-face {
+  font-family: "NovemberGeLC-Regular";
+  src: url("./other/fonts/NovemberGeLC-Regular.woff2") format("truetype");
+}
+@font-face {
+  font-family: "Helvetica75";
+  src: url("./other/fonts/Linotype-HelveticaNeueLTGEO75Bold.ttf")
+    format("truetype");
+}
+svg {
+  overflow: inherit;
+}

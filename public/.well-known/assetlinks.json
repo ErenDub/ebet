@@ -1,0 +1,15 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.example.ithanku",
+            "sha256_cert_fingerprints": [
+                "6B:41:26:A6:1E:D8:BD:91:D3:8B:57:10:5F:07:5C:2D:AB:3E:26:A4:D1:3C:9C:97:15:78:9E:0D:56:0A:CE:DC",
+                "8E:85:CD:3E:7E:22:E8:A9:9F:27:50:AC:30:C1:7D:D4:F9:61:36:52:66:E6:6E:A7:BD:53:D1:59:18:68:76:87"
+            ]
+        }
+    }
+]
