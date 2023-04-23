@@ -9,8 +9,10 @@ import {
 } from "@mui/material";
 import { Box } from "@mui/system";
 import { CashGames } from "modules/main/blocks/cashGames/cash-games";
+import { FinalStage } from "modules/main/blocks/finalStage/final-stage";
 import { BottomCarousel } from "modules/main/blocks/mutual/bottom-carousel";
 import { TermsAccordion } from "modules/main/blocks/mutual/terms-accordion";
+import { SpringSeries } from "modules/main/blocks/springSeries/spring-series";
 import { DialogLayout } from "other/layouts/dialogLayout";
 import { useState } from "react";
 
@@ -198,10 +200,10 @@ const Main = () => {
             <CashGames />
           </TabPanel>
           <TabPanel value={value} index={1}>
-            Item Two
+            <SpringSeries />
           </TabPanel>
           <TabPanel value={value} index={2}>
-            Item Three
+            <FinalStage />
           </TabPanel>
         </Box>
         <TermsAccordion />

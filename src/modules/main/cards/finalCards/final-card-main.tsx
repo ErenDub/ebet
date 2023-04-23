@@ -1,9 +1,8 @@
-import { Container, Paper, Typography } from "@mui/material";
-import { Box, Stack } from "@mui/system";
-import { muiTheme } from "other/theme";
+import { Box, Container, Paper, Typography } from "@mui/material";
+import { Stack } from "@mui/system";
 import { ReactNode } from "react";
 
-export const DialogItemLayout = ({
+export const FinalCardMain = ({
   children,
   title = "",
   bg = true,
@@ -18,13 +17,10 @@ export const DialogItemLayout = ({
     <Container
       component={Paper}
       disableGutters
-      maxWidth="md"
       sx={{
-        my: 4,
         border: "none",
-        outline: `4px solid ${muiTheme.palette.secondary.light}`,
-        borderRadius: "16px",
-        bgcolor: "secondary.dark",
+        borderRadius: "10px",
+        bgcolor: "secondary.main",
         position: "relative",
       }}
     >
@@ -44,23 +40,23 @@ export const DialogItemLayout = ({
           {light && (
             <Box
               sx={{
-                width: { lg: 250, md: 250, sm: 125, xs: 125 },
+                width: { lg: 100, md: 100, sm: 100, xs: 100 },
                 height: 5,
                 borderBottomLeftRadius: 5,
                 borderBottomRightRadius: 5,
                 bgcolor: "primary.main",
                 position: "absolute",
-                top: -4,
+                top: 0,
                 boxShadow: "1px 2px 6px 4px rgba(240,90,34,0.3)",
               }}
             />
           )}
-          <Typography variant="h2" textAlign="center">
+          <Typography variant="h3" textAlign="center">
             {title}
           </Typography>
         </Stack>
       )}
-      <Box p={2}>{children}</Box>
+      <Box p={1}>{children}</Box>
     </Container>
   );
 };
