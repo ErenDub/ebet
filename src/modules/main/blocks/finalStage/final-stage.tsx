@@ -5,6 +5,7 @@ import { DialogItemLayout } from "other/layouts/dialogItemLayout";
 
 import banner from "../../../../other/assets/final-info-img.jpg";
 import { FinalCards } from "./final-cards";
+import { FinalMysteryKey } from "./final-mystery-key";
 import { FinalWinTravel } from "./final-win-travel";
 export const FinalStage = () => {
   return (
@@ -27,18 +28,10 @@ export const FinalStage = () => {
           <CashCardLight description="15-დან 21 მაისის ჩათვლით მალტა პოკერის ფესტივალს უმასპინძლებს" />
         </Stack>
         <FinalCards />
-        <FinalWinTravel />
-        <Stack alignItems="center" justifyContent="center" gap={2}>
-          <Typography fontSize={14} textAlign="center">
-            * თუ მოთამაშე მოიგებს ბეჭედს ორჯერ ან მეტჯერ, ის The Lord of the
-            Rings ტურნირზემოხვდება ბეჭდების შესაბამისი რაოდენობის სტეკით
-          </Typography>
-          <Typography fontSize={14} textAlign="center">
-            *ტურნირში მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾-იანი
-            ბაი-ინის გადახდით.
-          </Typography>
-        </Stack>
       </DialogItemLayout>
+      <FinalWinTravel />
+
+      <FinalMysteryKey />
     </>
   );
 };

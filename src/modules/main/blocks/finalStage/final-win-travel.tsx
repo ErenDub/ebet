@@ -111,6 +111,16 @@ export const FinalWinTravel = () => {
           </Stack>
         ))}
       </Masonry>
+      <Stack alignItems="center" justifyContent="center" gap={2}>
+        <Typography fontSize={14} textAlign="center">
+          * თუ მოთამაშე მოიგებს ბეჭედს ორჯერ ან მეტჯერ, ის The Lord of the Rings
+          ტურნირზემოხვდება ბეჭდების შესაბამისი რაოდენობის სტეკით
+        </Typography>
+        <Typography fontSize={14} textAlign="center">
+          *ტურნირში მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾-იანი
+          ბაი-ინის გადახდით.
+        </Typography>
+      </Stack>
     </DialogItemLayout>
   );
 };

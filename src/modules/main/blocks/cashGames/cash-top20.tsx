@@ -3,18 +3,45 @@ import { ETable } from "other/global/eTable/eTable";
 import { muiTheme } from "other/theme";
 
 import example from "../../../../other/assets/example-icon.png";
+import finish from "../../../../other/assets/finish-icon.png";
+import star from "../../../../other/assets/star.png";
 
 export const CashTop20 = ({ title }: { title: string }) => {
   const holdemTop20 = {
-    head: ["ადგილი", "ვაუჩერი", "პრიზი"],
+    head: [
+      {
+        text: "ადგილი",
+      },
+      {
+        text: "ვაუჩერი",
+        icon: star,
+      },
+      {
+        text: "პრიზი",
+      },
+    ],
     body: [
       {
         voucher: "—",
         prize: "A კატეგორიის საგზური",
+        icon: (
+          <Box
+            component="img"
+            src={star}
+            sx={{ width: { lg: 14, md: 14, sm: 10, xs: 10 } }}
+          />
+        ),
       },
       {
         voucher: "—",
         prize: "B კატეგორიის საგზური",
+        icon: (
+          <Box
+            component="img"
+            src={finish}
+            sx={{ width: { lg: 14, md: 14, sm: 10, xs: 10 } }}
+          />
+        ),
       },
       {
         voucher: "1500₾",
@@ -111,6 +138,7 @@ export const CashTop20 = ({ title }: { title: string }) => {
             </Grid>
             <Grid textAlign="center" lg={12 / holdemTop20.head.length} item>
               <Typography fontSize={{ lg: 14, md: 14, sm: 10, xs: 10 }}>
+                {bodyItem.icon}
                 {bodyItem.prize}
               </Typography>
             </Grid>

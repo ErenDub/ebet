@@ -17,6 +17,7 @@ import { DialogLayout } from "other/layouts/dialogLayout";
 import { useState } from "react";
 
 import banner from "../../other/assets/banner.jpg";
+import logo from "../../other/assets/logo.png";
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
@@ -67,6 +68,23 @@ const Main = () => {
 
   return (
     <DialogLayout>
+      <Stack
+        direction="row"
+        justifyContent="space-between"
+        alignItems="center"
+        p={1}
+        sx={{
+          display: { lg: "none", md: "none", sm: "stack", xs: "stack" },
+        }}
+      >
+        <Box component="img" src={logo} sx={{ width: 24, height: 24 }} />
+        <Stack gap={1} direction="row">
+          <Button variant="text" sx={{ color: "white" }}>
+            Sign up
+          </Button>
+          <Button>Sign in</Button>
+        </Stack>
+      </Stack>
       <Box
         sx={{
           objectFit: "cover",
@@ -209,7 +227,6 @@ const Main = () => {
         <TermsAccordion />
         <BottomCarousel />
       </Box>
-
       <Container
         component={Paper}
         maxWidth="md"
