@@ -48,10 +48,11 @@ const Main = () => {
 
   const activeTabStyle = {
     backgroundColor: "#ff6600",
-    transition: "background-color 0.5s ease, outline 0.3s ease",
-    outline: "10px solid #ff6600",
-    ml: value === 0 ? "7px" : "0",
-    mr: value === 2 ? "7px" : "0",
+    transition:
+      "background-color 0.5s ease, transform 0.3s ease, margin 0.3s ease",
+    transform: "scale(1.2)",
+    ml: value === 0 ? "2.5vw" : "0",
+    mr: value === 2 ? "2.5vw" : "0",
     color: "white",
     zIndex: 1,
     height: 77,
@@ -60,7 +61,8 @@ const Main = () => {
 
   const inactiveTabStyle = {
     backgroundColor: "secondary.light",
-    transition: "background-color 0.5s ease, outline 0.3s ease",
+    transition:
+      "background-color 0.5s ease, transform 0.3s ease, margin 0.3s ease",
     color: "white",
     height: 77,
     boxShadow: "none",

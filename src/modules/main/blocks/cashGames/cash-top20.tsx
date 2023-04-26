@@ -107,7 +107,7 @@ export const CashTop20 = ({ title }: { title: string }) => {
             justifyContent="space-between"
             sx={{
               bgcolor: "secondary.dark",
-              outline: `2px solid ${muiTheme.palette.secondary.main}`,
+              boxShadow: ` 0px 0px 0px 2px ${muiTheme.palette.secondary.main}`,
               borderRadius: "75px",
               p: 2,
             }}
@@ -120,7 +120,7 @@ export const CashTop20 = ({ title }: { title: string }) => {
                     width: { lg: "28px", md: "28px", sm: "22px", xs: "22px" },
                     height: { lg: "28px", md: "28px", sm: "22px", xs: "22px" },
                     borderRadius: "50%",
-                    outline: `2px solid ${muiTheme.palette.secondary.main}`,
+                    boxShadow: ` 0px 0px 0px 2px ${muiTheme.palette.secondary.main}`,
                   }}
                   alignItems="center"
                   justifyContent="center"

@@ -22,7 +22,7 @@ export const DialogItemLayout = ({
       sx={{
         my: 4,
         border: "none",
-        outline: `4px solid ${muiTheme.palette.secondary.light}`,
+        boxShadow: ` 0px 0px 0px 4px ${muiTheme.palette.secondary.light}`,
         borderRadius: "16px",
         bgcolor: "secondary.dark",
         position: "relative",
