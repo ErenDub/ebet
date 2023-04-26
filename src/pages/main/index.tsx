@@ -51,8 +51,8 @@ const Main = () => {
     transition:
       "background-color 0.5s ease, transform 0.3s ease, margin 0.3s ease",
     transform: "scale(1.2)",
-    ml: value === 0 ? "2.5vw" : "0",
-    mr: value === 2 ? "2.5vw" : "0",
+    ml: { lg: value === 0 ? "1.4vw" : "0", xs: value === 0 ? "2.5vw" : "0" },
+    mr: { lg: value === 2 ? "1.4vw" : "0", xs: value === 2 ? "2.5vw" : "0" },
     color: "white",
     zIndex: 1,
     height: 77,
