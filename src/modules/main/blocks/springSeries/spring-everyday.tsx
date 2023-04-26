@@ -29,7 +29,12 @@ export const SpringEveryday = () => {
               }}
             >
               <Stack gap={{ lg: 2, md: 2, sm: 1, xs: 1 }}>
-                <Typography fontWeight={600}>Holdem Highrollers</Typography>
+                <Typography
+                  fontWeight={600}
+                  fontSize={{ lg: 15, md: 15, sm: 15, xs: 12 }}
+                >
+                  Holdem Highrollers
+                </Typography>
                 <Typography fontWeight={600} fontSize={24} color="#FFBE00">
                   50 000 ₾
                 </Typography>
@@ -71,7 +76,12 @@ export const SpringEveryday = () => {
               }}
             >
               <Stack gap={{ lg: 2, md: 2, sm: 1, xs: 1 }}>
-                <Typography fontWeight={600}>Omaha Highrollers</Typography>
+                <Typography
+                  fontWeight={600}
+                  fontSize={{ lg: 15, md: 15, sm: 15, xs: 12 }}
+                >
+                  Omaha Highrollers
+                </Typography>
                 <Typography fontWeight={600} fontSize={24} color="#FFBE00">
                   50 000 ₾
                 </Typography>
